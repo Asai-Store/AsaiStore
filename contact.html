@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/contactstyle.css">
+        <!-- <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"> -->
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Ephesis&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Ephesis&family=Work+Sans:wght@100&display=swap');
+        </style>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Mea+Culpa&family=Roboto:wght@100&family=Work+Sans:wght@900&display=swap" rel="stylesheet">
+        <title>Asaí Store</title>
+    </head>
+    <body>  
+
+        <!--HEAEDER DE LA PAGINA  -->
+
+        <header>
+            <div class="logo">
+                <a id="linkLogo" class="active" href="index.html" target="_self"><img class="header-logo" src="img/asai_logo.png" alt="asai logo"></a>
+                <a id="linkLogo" class="active" href="index.html" target="_self"><H1 style="font-size:7vw; margin: 0px;">Asaí Store</H1></a>
+            </div>                  
+            <nav  class="navbar" id="navbar-id">
+                <a href="index.html" target="_self">Inicio</a>
+                <a href="catlog.html" target="_self">Catálogo</a>
+                <a href="#como" target="_self">¿Cómo comprar?</a>
+                <a class="active" href="contact.html" target="_self">Contacto</a>
+                
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+
+            </nav>
+        </header>
+        
+        <!-- CUERPO PRINCIPAL DE LA PAGINA -->
+        
+        <form id="formulario" action="" target="_blank" class="formulario">
+            <fieldset id="fieldset">
+                <legend align="center">Por favor ingrese sus datos y consulta, nos comunicares con usted a la brevedad.</legend>
+                
+                <!-- CAMPO: NOMBRE -->
+
+                <div class="formulario__grupo" id="grupo__nombre">
+                    <label for="nombre" class="formulario__label">Nombre: </label>
+                    <div class="formulario__grupo-input">    
+                        <input type="text" id="nombre" name="nombre" maxlength="30" size="32" placeholder="Ingrese su nombre" class="formulario__input">
+                        <i class="formulario__validacion-estado fa-solid fa-times-circle"></i>
+                    </div>    
+                    <p class="formulario__input-error">El nombre debe contener solo letras y espacios</p>
+                </div>
+                
+                <!-- CAMPO: APELLIDO -->
+
+                <div class="formulario__grupo" id="grupo__apellido">
+                    <label for="apellido" class="formulario__label">Apellido: </label>
+                    <div class="formulario__grupo-input">    
+                        <input type="text" id="apellido" name="apellido" maxlength="30" size="32" placeholder="Ingrese su apellido" class="formulario__input">
+                        <i class="formulario__validacion-estado fa-solid fa-times-circle"></i>
+                    </div>    
+                    <p class="formulario__input-error">El apellido debe contener solo letras y espacios</p>
+                </div>
+                
+                <!-- CAMPO: TELEFONO -->
+
+                <div class="formulario__grupo" id="grupo__telefono">
+                    <label for="telefono" class="formulario__label">Teléfono: </label>
+                    <div class="formulario__grupo-input">    
+                        <input type="number" id="telefono" name="telefono" maxlength="14" size="16" placeholder="011 1122 3344" class="formulario__input">
+                        <i class="formulario__validacion-estado fa-solid fa-times-circle"></i>
+                    </div>    
+                    <p class="formulario__input-error">El teléfono debe contener solo números y no más de 11 dígitos</p>
+                </div>
+                
+                <!-- CAMPO: EMAIL -->
+
+                <div class="formulario__grupo" id="grupo__email">
+                    <label for="email" class="formulario__label">Correo electrónico: </label>
+                    <div class="formulario__grupo-input">    
+                        <input type="email" id="email" name="email" maxlength="30" size="32" placeholder="alguien@correo.com" class="formulario__input">
+                        <i class="formulario__validacion-estado fa-solid fa-times-circle"></i>
+                    </div>    
+                    <p class="formulario__input-error">El correo electrónico solo debe contener letras, números, puntos guión alto y/o bajo.</p>
+                </div>
+                
+                <!-- CAMPO: CONSULTA DE MEDIO DE CONTACTO PREFERIDO -->
+
+                <div class="formulario__grupo" id="grupo__consulta">
+                    <label for="consulta" class="formulario__label">
+                        <p>Medio de contacto preferido:</p><br>
+                        <label for="consultaTelefono"><input type="radio" class="formulario__checkbox" name="consulta" id="consultaTelefono">Teléfono</label><br>
+                        <label for="consultaEmail"><input type="radio" class="formulario__checkbox" name="consulta" id="consultaEmail">Correo electrónico</label><br>
+                    </label>
+                
+                <!-- CAMPO: NEWSLETTER -->
+
+                <div class="formulario__grupo" id="grupo__novedades">
+                    <label class="formulario__label">
+                        <input type="checkbox" class="formulario__checkbox" name="novedades" id="novedades">
+                        Recibir newsletter semanal con las últimas novedades.
+                    </label>
+                </div>
+                
+                <div class="formulario__mensaje" id="formulario__mensaje">
+                    <p><i class="fa-solid fa-triangle-exclamation"></i><b>Error:</b> Por favor complete el formulario completamente!</p>
+                </div>
+                
+                <!-- BOTON DE ENVIAR -->
+
+                <div class="formulario__grupo formulario__grupo-btn-enviar">
+                    <button type="submit" class="formulario__btn">Enviar</button>
+                    <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Gracias por contactarnos!</p>
+                </div>
+                
+                
+            </fieldset>
+        </form>
+               
+        <!-- FOOTER DE LA PAGINA -->
+
+        <footer>
+
+            <!-- INFORMACION INSTITUCIONAL -->
+
+            <div class="mapa">
+                <ul class="ul-sitemap">
+                    <li class="li-sitemap"><a href="somos.html" target="_self">¿Quiénes somos?</a></li>
+                    <li class="li-sitemap"><a href="shopfloor.html" target="_self">Trabaja con nosotros</a></li>
+                    <li class="li-sitemap"><a href="shopfloor.html" target="_self">Contacto</a></li>
+                </ul>
+            </div>
+            
+            <!-- DERECHOS DE AUTOR -->
+
+            <div class="copy">
+                <div class="copyright">
+                    <p>Ithurburu Juan Pablo - Comisión 22066 - 2022</p>
+                </div>
+            </div>
+            
+            <!-- REDES SOCIALES DE LA PAGINA -->
+
+            <div class="social">
+                <ul class="ul-social">
+                    <h4>Seguinos en</h4>
+                    <li class="social-opt" id="facebook"><a href="#facebook" target="_self"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li class="social-opt" id="twitter"><a href="#twitter" target="_self"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li class="social-opt" id="instagram"><a href="#instagram" target="_self"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li class="social-opt" id="whatsapp"><a href="#whatsapp" target="_self"><i class="fa-brands fa-whatsapp"></i></a></li>
+                    <li class="social-opt" id="youtube"><a href="#youtube" target="_self"><i class="fa-brands fa-youtube"></i></a></li>
+                </ul>
+            </div>
+        </footer>
+        <script src="js/header.js"></script>
+        <script src="js/validacion.js"></script>
+        <script src="https://kit.fontawesome.com/c2f291c2da.js" crossorigin="anonymous"></script>
+        
+    </body>
+</html>
+    

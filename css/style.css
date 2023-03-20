@@ -1,0 +1,700 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ body {
+     display: block;
+     margin: 0px;
+ }
+/* AREA DE PRUEBA HEADER */
+header {
+    position: sticky;
+    margin: 5px;
+    z-index: 2;
+    box-shadow: 0px 16px 20px 0px  rgba(0, 0, 0, 0.4), 0px 16px 20px 0px rgba(0,0,0,0.38);
+    border-radius: 10px;
+    background-color: white;
+    border: 0.5px black solid;
+}
+
+#linkLogo{
+    color: black;
+}
+
+.navbar{
+    background-color: white;
+    overflow: hidden;
+    border-radius: 10px;
+    font-family: 'American Typewriter', sans-serif;
+    font-weight: 100;
+}
+.navbar a{
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 2vw;
+}
+.navbar a:hover{
+    box-shadow: 0px 16px 20px 0px  rgba(0, 0, 0, 0.4), 0px 16px 20px 0px rgba(0,0,0,0.38);
+    color: black;
+    border-bottom: black 2px solid;
+    background-image: linear-gradient(white, rgb(205, 205, 205));
+
+}
+.navbar a.active{
+    background-color: rgba(240, 128, 128, 0.511);
+    color: black;
+    box-shadow: 0px 16px 20px 0px  rgba(0, 0, 0, 0.4), 0px 16px 20px 0px rgba(0,0,0,0.38);
+    border-bottom: black 2px double;
+}
+.navbar .icon {
+    display:none;
+}
+.logo{
+    align-self: center;
+    display: inline-block;
+    width:-webkit-fill-available;
+}
+.header-logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 12vw;
+    float: left;
+}
+/* Estilos de los textos */
+h1 {
+    text-align: center;
+    margin: 0px;
+    font-family: 'Ephesis', cursive;
+    font-size: 7vw;
+    display:block;
+    position: absolute;
+    left: 35vw;
+    top:2vw;
+
+}
+h2 {
+    font-family: 'Ephesis', cursive;
+    font-size: 5.8vw;
+    display: block;
+    margin-block-start: 0.1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0.em;
+    margin-inline-end: 0.5em;
+    bottom: 46%;
+    grid-area: h2; 
+}
+h3 { 
+    margin-top: 100px;
+    font-weight: 200;
+    grid-area: h3;
+    bottom: 5%;
+    display: block;
+    margin-block-start: 0.1em;
+    margin-block-end: 0.1em;
+    margin-inline-start: 0.5em;
+    margin-inline-end: 0em;
+    font-size: 2.2vw;
+    font-family: 'American Typewriter', sans-serif;
+    font-weight: 500;
+    
+}
+
+a p li {
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* ESTILOS DEL MAIN DEL CATALOGO */
+
+.catalogo_principal{
+    /* border: 2px blue solid; */
+    margin: 0px;
+    padding: 0px;
+    position: static;
+    margin-top: 20px;
+}
+.catalogo_producto{
+    border: 5px black solid;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 15px;
+}
+.catalogo_almohadones{
+    /* border: 2px red solid; */
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: auto;
+}
+.catalogo_titulo_articulo{
+    /* border: 2px green solid; */
+    margin: 2px;
+    padding: 2px;
+    position: relative;
+    justify-self: center;
+    top: 0%;
+    width: 100%;
+    font-family: 'American Typewriter', sans-serif;
+    font-size: 3.2vw;
+    
+}
+.imagen_catalogo{
+    /* border: 2px blueviolet solid; */
+    margin: 2px;
+    padding: 2px;
+    display: inline-block;
+    position: relative;
+    align-self: center;
+    border-radius: 15px;
+
+}
+.catalogo_descripcion{
+    /* border: 2px orange solid; */
+    margin: 2px;
+    padding: 2px;
+    display: inline-block;
+    position: relative;
+    width: 60%;
+    font-family: 'American Typewriter', sans-serif;
+    font-size:2.2vw;
+    align-self: center;
+}
+
+.comprar_btn{
+        display: block;
+        height: 45px;
+        line-height: 45px;
+        width: 30%;
+        background: #000;
+        color: #fff;
+        font-family: 'American Typewriter', sans-serif;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.1s ease all;
+        left: 50%;
+        margin-left: auto;
+        margin-right: auto;
+}
+.face{
+    display: inline-block;
+    margin: 20px;
+    margin-top: 35px;
+}
+.facevideo{
+    margin: 2px;
+    padding:2px;
+    width: 100%;
+    justify-content: center;
+}
+.mas_informacion{
+    display: inline-block;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    padding: 0px;
+    margin: 0px 1vw;
+    font-family: 'American Typewriter', sans-serif;
+    font-size: 2vw;
+}
+
+
+
+/* Estilo del contenido principal de la página */
+
+
+    .main {  
+        display: grid;
+        padding:2px;
+        margin: auto;
+        grid-template-columns: 0.5fr 2fr 0.5fr;
+        grid-template-rows: 0fr 0fr 0fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-area: main;
+        position: static;
+        justify-content: center;
+        margin-top: 20px;
+
+    }
+    /* Estilo de la imagen principal de la página */
+        
+        .canvas {  
+            display:flex;
+            position: relative;
+            justify-content: center;
+            padding:0px;
+            margin: 0px;
+            top:0px;
+            gap: 0px 0px;
+            grid-auto-flow: row;
+            grid-template-areas:
+            ". . ."
+            ". h2 h2"
+            ". h3 h3";
+            grid-area: 1 / 2 / 2 / 3;
+            height: inherit;
+            width: 100%;
+            z-index: 0;
+            margin-left: auto;
+            margin-right: auto;
+            
+            
+        }
+
+        
+        .canvas-text {
+            position: absolute;
+            right: 3px;
+            color: black;
+            z-index: 100;
+            padding-right: 10px;
+            
+        }
+        
+        
+        .overlay { 
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+            grid-area: 1 / 1 / 2 / 4; 
+            padding:0px;
+            margin: 0px;
+            position: relative;
+            z-index: 1;
+            background: rgba(0, 0, 0, 0.7);
+            width: inherit;
+            opacity: 100%;
+            max-height: 50vw;
+        }    
+            #banner {
+                opacity: 1;
+            }
+            
+            
+            
+            
+        
+
+    /* Estilo del menú de categorías de productos */
+
+
+        .catlog {  
+            display: grid;
+            padding:2px;
+            padding-top: 5px;
+            margin: auto;
+            grid-template-columns: 1.4fr 0.2fr 1.4fr;
+            grid-template-rows: 0fr 1fr 0fr;
+            gap: 0px 0px;
+            grid-auto-flow: row;
+            grid-template-areas:
+            "catlog-img-1 . catlog-desc-1"
+            "catlog-desc-2 . catlog-img-2"
+            "catlog-img-3 . catlog-desc-3";
+            grid-area: 2 / 2 / 4 / 3;
+            max-width: max-content;
+            height: max-content;
+            position: relative;
+            margin-top: 20px;
+            margin-bottom: 25px;
+            z-index: 2;
+            box-shadow: 0px 16px 20px 0px  rgba(0, 0, 0, 0.4), 0px 16px 20px 0px rgba(0,0,0,0.38);
+            border-radius: 10px;
+            background-color: white;
+            border: 0.5px black solid;
+
+        }
+        
+        .catlog-img-1 { grid-area: catlog-img-1; 
+            padding:10px;
+            margin: 10px;
+            box-shadow: 2px 6px 6px 2px  rgba(0, 0, 0, 0.2), 2px 6px 8px 2px rgba(0,0,0,0.2);
+            border-radius: 10px;
+
+        }
+        
+        .catlog-desc-1 { grid-area: catlog-desc-1; 
+            border: 0.5px solid black;
+            border-radius: 10px;
+            display: flex;
+            padding:10px;
+            margin: 10px;
+            text-align: center;
+            justify-content: center;
+            font-size: 2vw;
+            align-self: center;
+        }
+        
+        .catlog-desc-2 { grid-area: catlog-desc-2; 
+            border: 0.5px solid black;
+            border-radius: 10px;
+            display: flex;
+            padding:10px;
+            margin: 10px;
+            text-align: center;
+            justify-content: center;
+            font-size: 2vw;
+            align-self: center;
+        }
+        
+        .catlog-img-2 { grid-area: catlog-img-2; 
+            padding:10px;
+            margin: 10px;
+            box-shadow: 2px 6px 6px 2px  rgba(0, 0, 0, 0.2), 2px 6px 8px 2px rgba(0,0,0,0.2);
+            border-radius: 10px;
+        }
+        
+        .catlog-img-3 { grid-area: catlog-img-3; 
+            margin: 10px;
+            padding: 10px;
+            box-shadow: 2px 6px 6px 2px  rgba(0, 0, 0, 0.2), 2px 6px 8px 2px rgba(0,0,0,0.2);
+            border-radius: 10px;
+        }
+        
+        .catlog-desc-3 { grid-area: catlog-desc-3; 
+            border: 0.5px solid black;
+            border-radius: 10px;
+            display: flex;
+            padding:10px;
+            margin: 10px;
+            text-align: center;
+            justify-content: center;
+            font-size: 2vw;
+            align-self: center;
+        }
+
+        .img-catlog-picture{
+            max-width: 35vw;
+            border-radius: 10px;
+            height: inherit;
+
+        }
+
+        .catlog-descrip-content{
+            max-width: 35vw;
+            font-family: 'American Typewriter', sans-serif;
+            font-weight: 400;
+            color: black;
+
+        }
+
+
+/* Estilos del footer de la página */
+  
+  footer {  
+    display: grid   ;
+    padding:2px;
+    margin: 2px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 0fr 0fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "mapa copy social"
+      "mapa copy social"
+      "mapa copy social";
+    grid-area: footer;
+    position: static;
+    font-size: 1.5vw;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    z-index: 10;
+    box-shadow: 0px 16px 20px 0px  rgba(0, 0, 0, 0.4), 0px 16px 20px 0px rgba(0,0,0,0.38);
+    border-radius: 10px;
+    background-color: rgba(240, 128, 128, 0.511);
+    border: 0.5px black solid;
+    font-family: 'American Typewriter', "Ayuthaya";
+    font-weight: 200;
+    color: rgb(67, 63, 63);
+  }
+
+    /* Estilos de los principales links de interes de la página */
+
+        .mapa {  display: grid;
+            padding:0px;
+            margin:3px;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 0fr 0fr 0fr;
+            gap: 0px 0px;
+            grid-auto-flow: row;
+            grid-template-areas:
+            ". ul-sitemap ."
+            ". ul-sitemap ."
+            ". ul-sitemap .";
+            grid-area: mapa;
+            align-content: center;
+        }
+        .mapa a{
+            text-decoration: none;
+            color: black;
+            font-weight: 500;
+        }
+        .ul-sitemap{
+            width: max-content;
+            display: block;
+            position: relative;
+            padding: 0px;
+            margin: 0px;
+            left: 8vw;
+            top: 0px;
+        }
+
+        .li-sitemap{
+            list-style-type: none;
+            padding: 2px;
+            margin: 2px;
+            display: block;
+            text-align: center;
+        }
+
+  .sitemap { grid-area: sitemap; }
+
+    /* Estilos del copyright de la página */
+        
+        .copy {  display: grid;
+            padding:2px;
+            margin: 2px;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            gap: 0px 0px;
+            grid-auto-flow: row;
+            grid-template-areas:
+            ". . ."
+            ". . ."
+            "copyright copyright copyright";
+            grid-area: copy;
+        }
+  
+  .copyright {
+       grid-area: copyright;
+       text-align: center;
+       font-size: 1.2vw;
+  }
+  
+    /* Estilos de los links a las redes sociales de la página */
+
+        .social {  display: grid;
+            padding:2px;
+            margin: 2px;
+        }
+        
+        .ul-social{
+            display: inline-block;
+            margin-top: 13px;
+            justify-self: center;
+            color: black;
+        }
+        
+        h4{
+            margin: 0px;
+            padding: 0px;
+            padding-bottom: 5px;
+            color: black;
+            text-align: center;
+            font-weight: 500;
+        }
+
+        .social-opt{
+            float: left;
+            list-style-type: none;;
+            padding: 5px;
+            margin: 5px;
+            top:0px;
+        }
+        .social-opt a {
+            text-decoration: none;
+            color: black;
+        }
+
+/* WHATSAPP */
+
+.whatsapp {
+    position: fixed; 
+    right:25px; /*Margen derecho*/
+    bottom:150px; /*Margen abajo*/
+    z-index:999;
+   }
+   .whatsapp img {
+    width:60px; /*Alto del icono*/
+    height:60px; /*Ancho del icono*/
+   }
+   .whatsapp:hover{
+   opacity: 0.7 !important;
+   filter: alpha(opacity=70) !important;
+   }
+   
+
+    
+     
+
+ 
+
+ /* ATES DE ACA */
+
+
+        @media only screen and (max-width:450px) {
+            a p li h3 {
+                font-family: 'Roboto', sans-serif;
+                font-family: 'Work Sans', sans-serif;
+                font-weight: 1200;
+            }
+
+            p {
+                font-size: 3vw;
+            }
+
+            h3{
+                display: none;
+            }
+
+            header{
+                box-shadow: 0px 4px 5px 0px  rgba(0, 0, 0, 0.4), 0px 4px 5px 0px rgba(0,0,0,0.38);    
+            }
+
+            h1{
+                font-size: 13vw;
+                left: 26vw;
+                top: 5vw;
+            }
+
+            .navbar a{
+                font-size: 3.2vw;
+            }
+
+            .navbar a:not(:first-child) {display:none;}
+            .navbar a.icon{
+                float: right;
+                display: block;
+            }
+
+            .navbar.responsive {position:relative;}
+            .navbar.responsive a.icon{
+                position: absolute;
+                right: 0px;
+                top: 0px;
+            }
+
+            .navbar.responsive a{
+                float: none;
+                display: block;
+                text-align: left;
+                font-size: 3.2vw;
+            }
+
+            .header-logo{
+                height: 16vw;
+            }
+            .logo{
+                margin-top: 20px;
+            }
+            .main{
+                margin-top: 5px;
+                grid-template-rows: 0.0fr 0fr 0fr;
+            }
+            .catlog{
+                margin-bottom: 5px;
+                margin-top: 5px;
+                box-shadow: 0px 4px 5px 0px  rgba(0, 0, 0, 0.4), 0px 4px 5px 0px rgba(0,0,0,0.38);
+            }
+            .catlog-img-1{
+                box-shadow: 0px 4px 5px 0px  rgba(0, 0, 0, 0.4), 0px 4px 5px 0px rgba(0,0,0,0.38);
+            }                   
+ 
+            .catlog-img-2{
+                box-shadow: 0px 4px 5px 0px  rgba(0, 0, 0, 0.4), 0px 4px 5px 0px rgba(0,0,0,0.38);
+            }
+            .catlog-img-3{
+                box-shadow: 0px 4px 5px 0px  rgba(0, 0, 0, 0.4), 0px 4px 5px 0px rgba(0,0,0,0.38);
+            }
+            footer{
+                grid-template-rows: 1fr 1fr 1fr;
+                margin-top: 0px;
+                box-shadow: 0px 4px 5px 0px  rgba(0, 0, 0, 0.4), 0px 4px 5px 0px rgba(0,0,0,0.38);
+
+            }
+            .ul-sitemap{
+                margin: 0px;
+                top: 0px;
+                bottom: 50px;
+                left: 0px;
+                font-size: 2.8vw;
+            }
+            .copyright{
+                font-size: 3vw;
+                margin:-20px
+            }
+            .ul-social{
+                margin-top: 2px;
+                top: 10%;
+                padding-inline-start: 7px;
+            }
+            .social-opt{
+                padding: 2px;
+                margin: 2px;
+                font-size: small;
+            }
+            .social{
+                display: grid;
+                padding: 2px;
+                margin: -6px;
+                grid-row: 2;
+
+            }
+
+            .catalogo_principal{
+                margin-top: 5px;
+            }
+            .catalogo_titulo_articulo{
+                font-size: 4.5vw;
+            }
+            .catalogo_descripcion{
+                width: 100%;
+                height: fit-content;
+                font-size: 3.5vw;
+            }
+            .comprar_btn{
+                width: 100%;
+            }
+
+            .imagen_catalogo{
+                width:100%;
+            }
+            .facevideo{
+                margin-left: auto;
+                margin-right: auto;
+                display: block;
+                position: relative;
+                left: -12vw;
+            }
+            .mas_informacion{
+                position: relative;
+                left: 10%;
+            }
+
+        }
+        
+        @media only screen and (min-width: 1440px) {
+            .whatsapp img {
+                width: 90px; /*Alto del icono*/
+                height:90px; /*Ancho del icono*/
+               }
+
+
+        }
+
+        @media only screen and (min-width: 2559px){
+            .whatsapp img {
+                width:120px; /*Alto del icono*/
+                height:120px; /*Ancho del icono*/
+               }
+        }

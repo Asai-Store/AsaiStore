@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Ephesis&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Ephesis&family=Work+Sans:wght@100&display=swap');
+        </style>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Mea+Culpa&family=Roboto:wght@100&family=Work+Sans:wght@900&display=swap" rel="stylesheet">
+        
+        <script src="https://kit.fontawesome.com/c2f291c2da.js" crossorigin="anonymous"></script>
+        <title>Asaí Store</title>
+    </head>
+    <body>  
+            <!--Header de la página  -->
+            <header>
+                    <div class="logo">
+                        <a id="linkLogo" class="active" href="index.html" target="_self"><img class="header-logo" src="img/asai_logo.png" alt="asai logo"></a>
+                        <a id="linkLogo" class="active" href="index.html" target="_self"><H1>Asaí Store</H1></a>
+                        </div>                  
+                    <nav  class="navbar" id="navbar-id">
+                        <a class="active" href="index.html" target="_self">Inicio</a>
+                        <a href="catlog.html" target="_self">Catálogo</a>
+                        <a href="#como" target="_self">¿Cómo comprar?</a>
+                        <a href="contact.html" target="_self">Contacto</a>
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                    </nav>
+            </header>
+
+            <!-- Main de la la página -->
+            <main>
+                
+                <div class="main">
+                    <!-- Canvas -->
+                    <!-- <div class="overlay">  -->
+                        <div class="canvas">
+                            <img id="banner" class="canvasimg" src="img/fondo.jpg" alt="materia prima" width="100%">  
+                            <h2 class="canvas-text">Almohadones para toda la vida</h2>
+                            <!-- <h3 class="canvas-text">Elaborados con los más altos estandares de calidad, nuestros almohadones ofrecen la mejor calidad a la hora de descansar.</h3> -->
+                        </div>
+                    </div>
+                        
+                <!-- Categorías de productos -->
+                    <div class="catlog">
+                        <div class="catlog-img-1">
+                            <img class="img-catlog-picture" src="img/floral.jpeg"  alt="línea floral">
+                        </div>
+                        <div class="catlog-desc-1">
+                            <p class="catlog-descrip-content">Línea de almohadones florales, perfectos para decorar tu casa!</p>
+                        </div>
+                        <div class="catlog-desc-2">
+                            <p class="catlog-descrip-content">Línea de almohadones infantiles, especiales para los más chiquitos!</p>
+                        </div>
+                        <div class="catlog-img-2">
+                            <img class="img-catlog-picture" src="img/infantil.jpeg" alt="línea infantil">
+                        </div>
+                        <div class="catlog-img-3">
+                            <img class="img-catlog-picture" src="img/frida.jpg" alt="línea Frida Kahlo">
+                        </div>
+                        <div class="catlog-desc-3">
+                            <p class="catlog-descrip-content">Nueva línea de almohadones Frida Khalo, ideales para darle el toque femenino que estás buscando.</p>
+                        </div>
+                    </div>
+                </div>
+            </main>    
+                <!-- Footer de la página -->
+            <div class="whatsapp">
+                <a href="https://api.whatsapp.com/send?phone=543834516006&text=%C2%A1Hola!%20Bienvenido%20a%20*Asa%C3%AD%20Store*%20.%20Ingresa%20tu%20pregunta%20a%20continuaci%C3%B3n%20y%20pronto%20ser%C3%A1s%20atendido%20por%20uno%20de%20nuestros%20asesores." target="_blank" title="Contactame por Whatsapp">
+                    <img src="https://www.peengler.com/wp-content/uploads/whatsapp.png" alt="WhatsApp" />
+                </a>
+            </div>
+            
+            
+            <footer>
+                    <!-- Mapa del sitio -->
+                        <div class="mapa">
+                                <ul class="ul-sitemap">
+                                    <li class="li-sitemap"><a href="somos.html" target="_self">¿Quiénes somos?</a></li>
+                                    <li class="li-sitemap"><a href="shopfloor.html" target="_self">Trabaja con nosotros</a></li>
+                                    <li class="li-sitemap"><a href="shopfloor.html" target="_self">Contacto</a></li>
+                                </ul>
+                        </div>
+                    <!-- Derechos de autor y link hacia el desarrollador de la página -->
+                    <div class="copy">
+                        <div class="copyright">
+                            <p>Ithurburu Juan Pablo - Comisión 22066 - 2022</p>
+                        </div>
+                    </div>
+                    <!-- Redes sociales de la página -->
+                    <div class="social">
+                        <ul class="ul-social">
+                                <h4>Seguinos en</h4>
+                                <li class="social-opt" id="facebook"><a href="https://www.facebook.com/asai.storearg" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                                <li class="social-opt" id="twitter"><a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+                                <li class="social-opt" id="instagram"><a href="https://instagram.com/asai_storearg?igshid=YmMyMTA2M2Y=" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                                <li class="social-opt" id="whatsapp"><a href="https://api.whatsapp.com/send?phone=543834516006&text=%C2%A1Hola!%20Bienvenido%20a%20*Asa%C3%AD%20Store*%20.%20Ingresa%20tu%20pregunta%20a%20continuaci%C3%B3n%20y%20pronto%20ser%C3%A1s%20atendido%20por%20uno%20de%20nuestros%20asesores." target="_blank"><i class="fa-brands fa-whatsapp"></i></a></li>
+                                <li class="social-opt" id="youtube"><a href="https://www.youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+                            </ul>
+                    </div>
+            </footer>
+            <script src="js/header.js"></script>
+    </body>
+</html>
